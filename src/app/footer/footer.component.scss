@@ -1,0 +1,52 @@
+@import url('../app.component.scss');
+
+.footer_container {
+    padding: 3rem 0 7rem;
+    text-align: center;
+}
+
+.footer_title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1rem;
+}
+
+.footer_list {
+    margin: 2.5rem 0;
+    column-gap: 2.5rem;
+}
+
+.footer_list,
+.footer_social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_link {
+    color: var(--title-color);
+}
+
+.footer_link:hover {
+    text-decoration: underline;
+}
+
+.footer_social {
+    column-gap: 1.25rem;
+}
+
+.footer_social-link {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: transform .3s;
+}
+
+.footer_social-link:hover {
+    transform: translate(-.15rem);
+}
+
+.footer_copy {
+    display: block;
+    margin-top: 4.5rem;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
