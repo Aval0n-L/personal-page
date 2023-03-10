@@ -1,0 +1,52 @@
+@import url('../main.component.scss');
+
+.about_container {
+    row-gap: 2.5rem;
+    justify-content: center;
+}
+
+.about_card {
+    position: relative;
+    width: 230px;
+    height: 330px;
+    background-color: var(--container-color);
+    text-align: center;
+    padding: 3.5rem 1rem;
+    border-radius: 7rem;
+}
+
+.about_card icon {
+    display: block;
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+    transition: transform .8s;
+}
+
+.about_title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1.5rem;
+}
+
+.about_border {
+    width: 250px;
+    height: 350px;
+    border: 1.8px solid var(--text-color-light);
+    border-radius: 7.75rem;
+    position: absolute;
+    inset: 0;
+    left: -10px;
+    margin: auto;
+    z-index: -1;
+    transition: opacity .6s;
+    opacity: 0;
+}
+
+.about_card:hover icon {
+    transform: rotate(360deg);
+}
+
+.about_card:hover .about_border {
+    opacity: 1;
+}

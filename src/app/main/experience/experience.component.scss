@@ -1,0 +1,40 @@
+@import url('../main.component.scss');
+
+.experience {
+    position: relative;
+}
+
+.experience_container {
+    row-gap: 3.5rem;
+}
+
+.experience_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2rem;
+}
+
+.experience_info {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.experience_name {
+    font-size: var(--normal-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.experience_country,
+.experience_year {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.experience_country {
+    margin-bottom: .75rem;
+}
