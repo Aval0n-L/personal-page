@@ -1,14 +1,18 @@
 @import url('../app.component.scss');
 
 .footer_container {
-    padding: 3rem 0 7rem;
+    padding: 1rem auto;
     text-align: center;
 }
 
 .footer_title {
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
-    margin-bottom: 1rem;
+}
+
+.footer_description {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);    
 }
 
 .footer_list {
@@ -32,6 +36,7 @@
 
 .footer_social {
     column-gap: 1.25rem;
+    margin: 1rem auto;
 }
 
 .footer_social-link {
@@ -44,9 +49,15 @@
     transform: translate(-.15rem);
 }
 
+.footer_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--text-color-light);
+    border-radius: 50%;
+}
+
 .footer_copy {
     display: block;
-    margin-top: 4.5rem;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
