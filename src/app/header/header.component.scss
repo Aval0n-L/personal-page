@@ -1,0 +1,78 @@
+@import url('../app.component.scss');
+
+.header {
+    width: 100%;
+    position: relative;
+    z-index: var(--z-fixed);
+    background-color: var(--container-color);
+    box-shadow: 0 10px 20px hsla(239, 67%, 43%, 0.671);
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.nav_container {
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5rem;
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+
+    background: url('../resources/images/logo_v3.png') no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.level_section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    color: var(--title-color);
+}
+.level {
+    margin: 0 10px;
+}
+.expirience {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 13rem;
+}
+mat-progress-bar {
+    width: 15rem;
+    margin: 0 10px;
+    position: relative;    
+}
+::ng-deep .mdc-linear-progress__bar-inner {
+    border-color: red;
+}
+
+mat-progress-bar.mat-progress-bar {
+    height: 50px;
+  }
+  
+  
+  mat-progress-bar .mat-progress-bar-buffer {
+    background: #e4e8eb;
+  }
+
+
+// @media screen and (max-width: 1023px) {
+//     .tab_menu {
+//         position: fixed;
+//         width: 88%;
+//         left: 0;
+//         right: 0;
+//         bottom: -60%;
+//         margin: 0 auto;
+//         background-color: var(--body-color);
+//         box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+//         padding: 2rem 1.5rem 5rem;
+//         border-radius: 2rem;
+//         transition: bottom .3s;
+//     }
+// }
