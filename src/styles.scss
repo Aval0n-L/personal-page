@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 @import 'remixicon/fonts/remixicon.css';
@@ -22,8 +22,8 @@
                       hsla(207, 65%, 65%, 1));
 
   /*=============== Font and typography ===============*/
-  --body-font: 'Roboto', sans-serif;
-  --title-font: 'Lora', serif;
+  --body-font: 'Cinzel', sans-serif;
+  --title-font: 'Cinzel', serif;
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;

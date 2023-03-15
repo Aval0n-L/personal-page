@@ -3,7 +3,7 @@
 .main {
     overflow: hidden;
     margin: 1rem 0;
-    border: 0.1rem solid red;
+    border: 0.1rem solid yellow;
 }
 
 .container {
@@ -17,29 +17,14 @@
     background-color: darkcyan;
 }
 
-.tab_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: .25rem;
-    font-size: var(--normal-font-size);
-    color: var(--title-color);
-    transition: color .3s;
+.section {
+  padding-block: 1rem;
 }
-
-.tab_item:hover {
-    color: var(--text-color-light);
-}
-
-
+/*
   
   .grid {
     display: grid;
     gap: 1.5rem;
-  }
-  
-  .section {
-    padding-block: 2.5rem;
   }
   
   .section_border {
@@ -64,4 +49,5 @@
     color: var(--text-color-light);
     margin-bottom: 3rem;
   }
+  */
   

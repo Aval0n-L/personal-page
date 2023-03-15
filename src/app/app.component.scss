@@ -1,10 +1,31 @@
 @import url('../styles.scss');
 
 section {
-    height: 100%;
     width: 100%;
-
+    height: 100%;
     background: black;
     background-position: center;
     background-size: cover;
+}
+
+.app_main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    grid-column: 1;
+    row-gap: 2;
+}
+
+.app_header, .app_footer {
+    //position: fixed;
+    width: 100%;    
+    background: blueviolet;
+}
+.app_header {
+    grid-column: 1;
+    row-gap: 1;
+}
+.app_footer {
+    grid-column: 1;
+    row-gap: 3;
 }

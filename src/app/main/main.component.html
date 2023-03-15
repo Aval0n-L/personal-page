@@ -1,5 +1,9 @@
 <main class="main">
-    <mat-tab-group class="container" [selectedIndex]="0">
+    <mat-tab-group 
+        class="container"
+        [selectedIndex]="1"
+        fitInkBarToContent
+        mat-align-tabs="center">
         <!--==================== HOME ====================-->
         <mat-tab label="Home" class="tab_item">
             <app-home></app-home>

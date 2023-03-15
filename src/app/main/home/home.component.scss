@@ -7,33 +7,27 @@
 }
 
 .distance {
-    padding: 0 5rem;
+    padding: 0 1rem;
 }
 
 .home_data {
     row-gap: 1.5rem;
     border: 1px solid red;
-
-    grid-column-start: 2;
-    grid-row-end: 1;
+    margin: auto;
 }
 
 .home_info {
     display: grid;
     row-gap: 2rem;
     border: 1px solid red;
-    
-    grid-column-start: 1;
-    grid-row-end: 1;
+    margin: auto;
 }
 
 .home_service {
     display: grid;
     row-gap: 2rem;
     border: 1px solid red;
-
-    grid-column-start: 3;
-    grid-row-end: 1;
+    margin: auto;
 }
 
 .home_title {
@@ -46,7 +40,6 @@
 .home_blob {
     position: relative;
     width: 300px;
-    height: 500px;
     
     justify-self: center;
     border-radius: 6rem;
@@ -54,9 +47,7 @@
 }
 
 .home_profile {
-    width: 300px;
-    height: 500px;
-    background: var(--gradient-color);
+    width: 100%;
     border-radius: 5rem;
     overflow: hidden;
     display: flex;
@@ -65,7 +56,7 @@
 }
 
 .home_profile img {
-    width: 350px;
+    width: 300px;
 }
 /*
 .home_social {

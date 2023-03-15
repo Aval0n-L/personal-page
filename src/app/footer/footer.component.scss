@@ -1,5 +1,9 @@
 @import url('../app.component.scss');
 
+.footer {
+    position: sticky;
+}
+
 .footer_container {
     padding: 1rem auto;
     text-align: center;

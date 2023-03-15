@@ -1,51 +1,33 @@
 <section class="skills section">
     
-    <h2 class="section_title">Skills</h2>
-    <span class="section_subtitle"></span>
+    <h2 class="skills_title">Skills</h2>
+    <div class="skills_container container">
 
-    <div class="skills_container container grid section_border">
-
-        <div class="skills_content">
-            <h3 class="skills_title">Backend Developer</h3>
-            <div class="skills_info">
-                <div class="skills_data">
-                    <div class="skills_blob">
-                        <img src="../assets/icons/c_sharp.png" alt="c_sharp" >
-                    </div>
-                    <h3 class="skills_name">C#</h3>
-                </div>
+        <div class="skills_branch">
+            <div class="navigation">
+              <div role="tab" (click)="tab=1" [ngClass]="{active: isBack()}" class="label">
+                <span class="icon"><i class="ri-sword-line"></i></span>
+                <div class="indicator back" [ngClass]="{full: isBack()}"></div>
+              </div>
+              <div role="tab" (click)="tab=2" [ngClass]="{active: isFront()}" class="label">
+                <span class="icon"><i class="ri-eye-line"></i></span>
+                <div class="indicator front" [ngClass]="{full: isFront()}"></div>
+              </div>
+              <div role="tab" (click)="tab=3" [ngClass]="{active: isPersonal()}" class="label">
+                <span class="icon"><i class="ri-shield-user-line"></i></span>
+                <div class="indicator personal" [ngClass]="{full: isPersonal()}"></div>
+              </div>
             </div>
+            
+            <app-backend  *ngIf="tab === 1"></app-backend>
+            <app-frontend *ngIf="tab === 2"></app-frontend>
+            <app-personal *ngIf="tab === 3"></app-personal>
         </div>
 
-        <div class="skills_content">
-            <h3 class="skills_title">Frontend Developer</h3>
-            <div class="skills_info">
-                
-                <div class="skills_data">
-                    <div class="skills_blob">
-                        <img src="../assets/icons/angular.png" alt="angular.png" >
-                    </div>
-                    <h3 class="skills_name">Angular</h3>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="skills_content">
-            <h3 class="skills_title">Personal characteristics</h3>
-            <div class="skills_info">
-
-                <div class="skills_data">
-                    <div class="skills_blob">
-                        <img src="" alt="" >
-                    </div>
-
-                    <h3 class="skills_name"></h3>
-                    <span class="skills_subtitle"></span>
-                </div>
-
-            </div>
+        <div class="skills_apply">
+            <app-active-skills></app-active-skills>
         </div>
 
     </div>
+
 </section>
