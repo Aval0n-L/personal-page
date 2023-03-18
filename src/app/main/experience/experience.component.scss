@@ -2,21 +2,56 @@
 
 .experience {
     position: relative;
+
+    border: 2px solid red;
 }
 
 .experience_container {
     row-gap: 3.5rem;
+    height: 30rem;
+    
+    border: 2px solid orange;
 }
 
-.experience_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: .5rem;
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
-    margin-bottom: 2rem;
+.experience_list,
+.experience_content {
+    border: 2px solid yellow;
 }
+
+.mat-accordion .mat-expansion-panel {
+    border: 2px solid red;
+    margin-bottom: 0.3rem;
+}
+
+
+
+.example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://media.licdn.com/dms/image/D4E0BAQH7DTCk5iDqFw/company-logo_200_200/0/1666876000191?e=1686787200&v=beta&t=nVF6WwT37Bd_hOr8si0546sCuQAatbFGcwPVYdGzONw');
+    background-size: cover;
+  }
+
+
 
 .experience_info {
     display: grid;

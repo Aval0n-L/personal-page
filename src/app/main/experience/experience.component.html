@@ -1,10 +1,47 @@
 <section class="experience section">
     <h2 class="section_title">Qualification & Education</h2>
-    <span class="section_subtitle"></span>
 
     <div class="experience_container container grid section_border">
-        <div class="experience_content">
-            <h3 class="experience_title">Education</h3>
+
+        <mat-accordion  class="experience_list">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h3 class="experience_title">Education</h3>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                
+                <div *ngFor="let school of schools">
+                    <div role="tab" (click)="getValue(school, drawer)">
+                        <h4>{{ school.name }}</h4>
+                    </div>
+                </div>
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h3 class="experience_title">Work</h3>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <div *ngFor="let job of jobs">
+                    <div role="tab" (click)="getValue(job, drawer)">
+                        <h4>{{ job.name }}</h4>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-drawer-container class="experience_content" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+                <div (click)="drawer.close()" class="drawer_close"></div>
+                <app-experience-card [school]="selected"></app-experience-card>
+            </mat-drawer>          
+        </mat-drawer-container>
+
+        <!-- <div class="experience_content">
             
             <div class="experience_info">
                 <div>
@@ -26,7 +63,6 @@
 
         </div>
         <div class="experience_content">
-            <h3 class="experience_title">Work</h3>
             
             <div class="experience_info">
                 <div>
@@ -51,6 +87,6 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
     </div>
 </section>

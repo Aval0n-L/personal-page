@@ -20,6 +20,14 @@
 .section {
   padding-block: 1rem;
 }
+
+.section_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
 /*
   
   .grid {

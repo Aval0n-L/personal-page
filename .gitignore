@@ -44,3 +44,4 @@ Thumbs.db
 .vscode
 src/assets/.gitkeep
 src/assets/temporary
+*.svg

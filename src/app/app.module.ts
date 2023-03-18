@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatTableModule} from '@angular/material/table';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,7 @@ import { BackendComponent } from './main/skills/backend/backend.component';
 import { FrontendComponent } from './main/skills/frontend/frontend.component';
 import { PersonalComponent } from './main/skills/personal/personal.component';
 import { ActiveSkillsComponent } from './main/skills/active-skills/active-skills.component';
+import { ExperienceCardComponent } from './main/experience/experience-card/experience-card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { ActiveSkillsComponent } from './main/skills/active-skills/active-skills
     BackendComponent,
     FrontendComponent,
     PersonalComponent,
-    ActiveSkillsComponent
+    ActiveSkillsComponent,
+    ExperienceCardComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,9 @@ import { ActiveSkillsComponent } from './main/skills/active-skills/active-skills
     MatTabsModule,
     MatProgressBarModule,
     MatTableModule,
+    MatExpansionModule,
+    MatSidenavModule,
+    MatCardModule,
     NoopAnimationsModule
   ],
   providers: [],
