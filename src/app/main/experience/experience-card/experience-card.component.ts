@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { School } from '../school.model';
 
 @Component({
   selector: 'app-experience-card',
@@ -7,5 +6,5 @@ import { School } from '../school.model';
   styleUrls: ['./experience-card.component.scss']
 })
 export class ExperienceCardComponent {
-  @Input() school! : School;
+  @Input() cardValue! : any;
 }

@@ -1,4 +1,4 @@
-import { Component, Directive, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Directive, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Job } from './job.model';
 import { School } from './school.model';
 
@@ -7,7 +7,13 @@ import { School } from './school.model';
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss']
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements OnInit {
+  
+  public selected : any;
+  ngOnInit() {
+    this.selected = {};
+  }
+
   public schools : Array<School> =
   [
     { 
@@ -77,7 +83,6 @@ export class ExperienceComponent {
   ]
 
 
-  public selected : any;
   public getValue(value: any, drawer: any) {
     this.selected = value;
     drawer.open();

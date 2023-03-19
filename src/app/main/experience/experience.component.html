@@ -37,7 +37,7 @@
         <mat-drawer-container class="experience_content" autosize>
             <mat-drawer #drawer class="example-sidenav" mode="side">
                 <div (click)="drawer.close()" class="drawer_close"></div>
-                <app-experience-card [school]="selected"></app-experience-card>
+                <app-experience-card [cardValue]="selected"></app-experience-card>
             </mat-drawer>          
         </mat-drawer-container>
 

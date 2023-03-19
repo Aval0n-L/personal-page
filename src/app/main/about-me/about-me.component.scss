@@ -1,35 +1,79 @@
 @import url('../main.component.scss');
 
-.about_container {
-    row-gap: 2.5rem;
+.about {
     justify-content: center;
+    align-items: center;
+    background: #161623;
+}
+
+.about_container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15rem;
+    height: 20rem;
+    margin: 1.5rem;
+    box-shadow: 1.2rem 1.2rem 3rem #000;
+    border-radius: 1rem;
+    border-top: 0.1rem solid rgb(190, 186, 186, 0.5);
+    border-left: 0.1rem solid rgb(190, 186, 186, 0.5);
+    background: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .about_card {
     position: relative;
     width: 230px;
     height: 330px;
-    background-color: var(--container-color);
     text-align: center;
     padding: 3.5rem 1rem;
-    border-radius: 7rem;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.about_card icon {
+.about_card:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*.about_card icon {
     display: block;
     font-size: 2rem;
     color: var(--title-color);
     margin-bottom: .75rem;
     transition: transform .8s;
+}*/
+
+.hide_title {
+    padding-bottom: 1rem;
+    font-size: var(--h2-font-size);
+    color: rgba(128, 128, 128, 0.5);
+    pointer-events: none;
+    transform: translateZ(30px);
 }
 
 .about_title {
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: 1.5rem;
+    transform: translateZ(30px);
 }
 
-.about_border {
+/*.about_border {
     width: 250px;
     height: 350px;
     border: 1.8px solid var(--text-color-light);
@@ -49,4 +93,19 @@
 
 .about_card:hover .about_border {
     opacity: 1;
+}*/
+
+.kotak{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 50px auto;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.kotak h3{
+  transform: translateZ(20px);
+  margin: auto;
 }
