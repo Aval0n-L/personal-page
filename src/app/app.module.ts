@@ -23,6 +23,8 @@ import { FrontendComponent } from './main/skills/frontend/frontend.component';
 import { PersonalComponent } from './main/skills/personal/personal.component';
 import { ActiveSkillsComponent } from './main/skills/active-skills/active-skills.component';
 import { ExperienceCardComponent } from './main/experience/experience-card/experience-card.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,14 +46,16 @@ import { ExperienceCardComponent } from './main/experience/experience-card/exper
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NoopAnimationsModule,
     MatTabsModule,
     MatProgressBarModule,
     MatTableModule,
     MatExpansionModule,
     MatSidenavModule,
-    MatCardModule,
-    NoopAnimationsModule
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

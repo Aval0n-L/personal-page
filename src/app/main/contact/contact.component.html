@@ -2,9 +2,9 @@
     <h2 class="section_title">Contact</h2>
     <span class="section_subtitle"></span>
 
-    <div class="contact_container container grid section_border">
+    <div class="contact_container container">        
 
-        <div class="contact_content">
+        <div class="info_box">
             <h3 class="contact_title">
                 Talk to me
             </h3>
@@ -21,27 +21,40 @@
             </div>
         </div>
 
-        <div class="contact_content">
+        <div class="mail_box">
             <h3 class="contact_title">
                 Write me
             </h3>
-
-            <form action="" class="contact_form" id="contact_form">
-                <div class="contact_form-div">
-                    <label for="" class="contact_form-tag">Name</label>
-                    <input type="text" name="user_name" class="contact_form-input" id="contact-name" required>
+            
+            <div class="container_box">
+                <div class="email_box">
+                    <div class="triangle"></div>
+                    <div class="triangle"></div>
+                    <div class="triangle"><i class="ri-google-fill"></i></div>
+                    <div class="triangle"></div>
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="paper">
+                        <div class="row">
+                            <div class="input_box">
+                                <input class="paper_input" type="text" id="name" formControlName="name" required>
+                                <label class="paper_label" for="name">Name</label>
+                            </div>
+                            <div class="input_box">
+                                <input class="paper_input" type="text" id="email" formControlName="email" required>
+                                <label class="paper_label" for="email">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <input class="paper_input" type="text" id="subject" formControlName="subject" required>
+                            <label class="paper_label" for="subject">Subject</label>
+                        </div>
+                        <div class="input_box subject">
+                            <textarea class="paper_text" id="message" formControlName="message" rows="8" required></textarea>
+                            <label class="paper_label" for="message">Offer</label>
+                        </div>
+                        <button class="paper_button" type="button">SUBMIT</button>
+                    </form>
                 </div>
-                <div class="contact_form-div">
-                    <label for="" class="contact_form-tag">Mail</label>
-                    <input type="email" name="user_name" class="contact_form-input" id="contact-email" required>
-                </div>
-                <div class="contact_form-div contact_form-area">
-                    <label for="" class="contact_form-tag">Suggestion/Offer</label>
-                    <textarea name="user_project" id="contact-project" class="contact_form-input"></textarea>
-                </div>
-
-                <button type="submit" class="contact_button">In Progress...</button>
-            </form>
+            </div>
         </div>
 
     </div>
