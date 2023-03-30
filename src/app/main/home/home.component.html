@@ -5,20 +5,19 @@
             <div>
                 <h2 class="home_title">
                     Welcome,<br>
-                    I'm Avalon<br>
-                    Software Developer<br>
+                    I'm {{info?.name}}<br>
+                    {{info?.position}}<br>
                 </h2>
             </div>
             <div>
-                <h3 class="home_info-title">BIOGRAPHY</h3>
-                <p class="home_info-description">Passionate about writing clear code and beautiful design</p>
+                <p class="home_info-description">{{home?.about}}</p>
             </div>
         </div>
         
         <div class="home_data distance">
             <div class="home_blob">
                 <div class="home_profile">
-                    <img src="../assets/temporary/profile.png" alt="profile">
+                    <img src="{{info?.photo}}" alt="profile">
                 </div>
             </div>
         </div>
@@ -26,11 +25,15 @@
         <div class="home_service distance">
             <div>
                 <h3 class="home_info-title">SERVICES</h3>
-                <p class="home_info-description">BACKEND DEV<br>FRONTEND DEV</p>
+                <p class="home_info-description">
+                    {{skills?.backend}}<br>{{skills?.frontend}}
+                </p>
             </div>            
             <div>
                 <h3 class="home_info-title">CONTACT</h3>
-                <p class="home_info-description">Poland, Warsawa<br>gmail@gmail.com</p>
+                <p class="home_info-description">
+                    {{home?.location}}<br>{{info?.mail}}
+                </p>
             </div>
         </div>
     </div>

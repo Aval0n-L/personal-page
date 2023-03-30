@@ -45,3 +45,5 @@ Thumbs.db
 src/assets/.gitkeep
 src/assets/temporary
 *.svg
+src/assets/data/profile.json
+.data/profile.json

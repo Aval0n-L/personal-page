@@ -25,6 +25,7 @@ import { ActiveSkillsComponent } from './main/skills/active-skills/active-skills
 import { ExperienceCardComponent } from './main/experience/experience-card/experience-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileService } from './service/profile.service';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [ ProfileService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

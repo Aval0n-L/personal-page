@@ -1,0 +1,20 @@
+{
+    "info" : {
+        "name" : "Avalon",
+        "photo" : "../assets/temporary/profile.png",
+        "position" : "Software Developer",
+        "mail" : "gmail@gmail.gmail",
+        "linkedIn" : "linkedIn"
+    },
+
+    "home" : {
+        "about" : "Passionate about writing clear code and beautiful design",
+        "location" : "Poland, Warsawa"
+    },
+
+    "skills" : {
+        "backend" : "Backend Developer",
+        "frontend" : "Fronted Developer",
+        "charcters" : "Personal characteristics"
+    }    
+}
