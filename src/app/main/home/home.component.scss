@@ -21,6 +21,15 @@
     row-gap: 2rem;
     border: 1px solid red;
     margin: auto;
+    max-width: 50rem;
+
+    height: 30rem;
+    max-height: 35rem;
+
+    text-align: center;
+
+    overflow-wrap: break-word; /* Wrapping long words  */
+    word-wrap: break-word; /* Word wrap in older browsers */
 }
 
 .home_service {
@@ -84,4 +93,5 @@
     font-family: var(--title-font);
     color: var(--title-color);
     padding-right: 4rem;
+    white-space: pre-line;
 }

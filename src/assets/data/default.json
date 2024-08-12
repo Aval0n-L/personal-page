@@ -1,14 +1,14 @@
 {
     "info" : {
-        "name" : "Avalon",
-        "photo" : "../assets/temporary/profile.png",
-        "position" : "Software Developer",
-        "mail" : "gmail@gmail.gmail",
-        "linkedIn" : "linkedIn"
+        "name" : "Raman",
+        "photo" : "../assets/data/profile.jpg",
+        "position" : "Full-Stack .Net Developer",
+        "mail" : "mr.tarazevich@gmail.com",
+        "linkedIn" : "https://www.linkedin.com/in/raman-pakhomau-8bbb22121/"
     },
 
     "home" : {
-        "about" : "Passionate about writing clear code and beautiful design",
+        "about" : "Software C#/.Net Developer with over 5+ years of experience in the industry.\nI worked with renowned companies like S&P Global and Accuris, where one of them I developed software solutions for the Engineering Workbench product.\nThis is a unique technology solution to a set of common engineering problems, that provides the ability engineers to access industry standards.",
         "location" : "Poland, Warsawa"
     },
 
