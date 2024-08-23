@@ -47,3 +47,4 @@ src/assets/temporary
 *.svg
 src/assets/data/profile.json
 .data/profile.json
+*.zip
