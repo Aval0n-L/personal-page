@@ -8,18 +8,23 @@
     box-shadow: 0 10px 20px hsla(239, 67%, 43%, 0.671);
     border-bottom-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding-inline: 1.5rem;
 }
 
 .logo {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
 }
 
@@ -27,48 +32,103 @@
     display: flex;
     align-content: center;
     align-items: center;
-    height: 60px;
+    height: 3.75rem;
     color: var(--title-color);
+    flex-wrap: wrap;
+    margin-left: auto;
 }
+
 .level {
-    margin: 0 10px;
+    margin: 0 1rem;
 }
+
 .expirience {
-    position: absolute;
-    margin-top: 3rem;
-    margin-left: 13rem;
+    margin-left: 1rem;
 }
+
 mat-progress-bar {
     width: 15rem;
-    margin: 0 10px;
+    margin: 0 auto;
     position: relative;    
+
+    @media screen and (max-width: 1023px) {
+        width: 15rem;
+        margin: 0 auto;
+    }
 }
+
 ::ng-deep .mdc-linear-progress__bar-inner {
     border-color: red;
+    left: 0;
 }
 
 mat-progress-bar.mat-progress-bar {
-    height: 50px;
-  }
-  
-  
-  mat-progress-bar .mat-progress-bar-buffer {
+    height: 3rem;
+
+    @media screen and (max-width: 1023px) {
+        height: 2rem;
+    }
+}
+
+mat-progress-bar .mat-progress-bar-buffer {
     background: #e4e8eb;
-  }
+}
 
+@media screen and (max-width: 1023px) {
+    .header {
+        flex-direction: column;
+        padding: 0.5rem;
+        box-shadow: 0 5px 10px hsla(239, 67%, 43%, 0.5);
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        justify-content: center;
+    }
 
-// @media screen and (max-width: 1023px) {
-//     .tab_menu {
-//         position: fixed;
-//         width: 88%;
-//         left: 0;
-//         right: 0;
-//         bottom: -60%;
-//         margin: 0 auto;
-//         background-color: var(--body-color);
-//         box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
-//         padding: 2rem 1.5rem 5rem;
-//         border-radius: 2rem;
-//         transition: bottom .3s;
-//     }
-// }
+    .nav_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-inline: 1rem;
+    }
+
+    .logo {
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .level_section {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .expirience {
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav_container {
+        padding-inline: 0.5rem;
+    }
+
+    .expirience {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}

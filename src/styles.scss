@@ -75,14 +75,15 @@ body {
   transition: background .4s; /* for dark mode animation */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, p {
   color: var(--title-color);
   font-family: var(--title-font);
+}
+
+h1, h2, h3 {
   font-weight: var(--font-medium);
 }
 h4, p {
-  color: var(--title-color);
-  font-family: var(--title-font);
   font-weight: var(--font-small);
 }
 
@@ -99,4 +100,3 @@ ul {
 
 /* For large devices */
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

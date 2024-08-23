@@ -16,26 +16,28 @@ export class HeaderComponent implements OnInit {
   private birthYear = 1995;
   private birthMonth = 8;
   private birthDay = 1;
-  private birthDate = new Date(this.birthYear, this.birthMonth, this.birthDay);
 
   ngOnInit() {
     let currentDate = new Date();
     this.level = currentDate.getUTCFullYear() - this.birthYear;
 
-    if(currentDate.getUTCMonth() < this.birthMonth) {
+    let currentMonth = currentDate.getUTCMonth() + 1; // JS return months from 0 to 11
+    let isBeforeBirthMonth = currentMonth < this.birthMonth 
+    let isBeforeBirthDayInMonth = (currentMonth === this.birthMonth && currentDate.getUTCDate() < this.birthDay);
+
+    if (isBeforeBirthMonth || isBeforeBirthDayInMonth) {
       this.level--;
     }
 
-    let differenceNow = (currentDate.getTime() - this.birthDate.getTime()) / (1000 * 3600 * 24);
-    this.experience = differenceNow;
-    this.expNow = differenceNow.toFixed();
-    
+    let startOfYear = new Date(currentDate.getUTCFullYear(), 0, 1);
+    let endOfYear = new Date(currentDate.getUTCFullYear(), 11, 31);
 
-    let nextBirthDay = new Date(currentDate.getUTCFullYear(),this.birthMonth,this.birthDay);
-    let differenceNeed = (nextBirthDay.getTime() - this.birthDate.getTime())  / (1000 * 3600 * 24);
+    let differenceNow = (currentDate.getTime() - startOfYear.getTime()) / (1000 * 3600 * 24);
+    this.expNow = differenceNow.toFixed();
+
+    let differenceNeed = (endOfYear.getTime() - startOfYear.getTime()) / (1000 * 3600 * 24);
     this.expNeed = differenceNeed.toFixed();
-    
-    this.experience = (differenceNow  * 100 ) / differenceNeed;
-  }
-  
+
+    this.experience = (differenceNow * 100) / differenceNeed;
+  }  
 }
